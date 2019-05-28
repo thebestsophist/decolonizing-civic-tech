@@ -11,3 +11,5 @@ kramdown:
   parse_block_html: true
 gems:
   - jekyll-paginate
+
+theme: jekyll-theme-minimal

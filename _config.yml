@@ -11,3 +11,4 @@ kramdown:
   parse_block_html: true
 gems:
   - jekyll-paginate
+remote-theme: siawyoung/immaculate

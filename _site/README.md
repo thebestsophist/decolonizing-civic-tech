@@ -1,3 +1,3 @@
 
-# Website for Decolon
-Website for decolonizingcivictech.com
+# Website for decolonizingcivictech.com
+

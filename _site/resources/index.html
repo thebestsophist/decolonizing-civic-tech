@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Resources</title>
+  <title>Resources &amp;amp Examples</title>
   <meta name="description" content="Civic tech 
 ">
 
@@ -19,9 +19,9 @@
   "@context": "http://schema.org",
   "@type": "NewsArticle",
   "mainEntityOfPage": "http://localhost:4000/resources/",
-  "headline": "Resources",
-  "datePublished": "2019-05-28T10:49:22-04:00",
-  "dateModified": "2019-05-28T10:49:22-04:00",
+  "headline": "Resources &amp;amp Examples",
+  "datePublished": "2019-05-30T23:22:31-07:00",
+  "dateModified": "2019-05-30T23:22:31-07:00",
   "description": "Civic tech 
 ",
   "author": {
@@ -50,32 +50,9 @@
 
   <style amp-custom>
   
-  /* Import ET Book styles
+  @charset "UTF-8";
+/* Import ET Book styles
    adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
-@font-face {
-  font-family: "et-book";
-  src: url("/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
-  src: url("/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("/assets/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "et-book";
-  src: url("/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
-  src: url("/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("/assets/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: "et-book";
-  src: url("/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
-  src: url("/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("/assets/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: "et-book-roman-old-style";
-  src: url("/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
-  src: url("/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("/assets/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 /* Tufte CSS styles */
 html {
   font-size: 15px; }
@@ -85,7 +62,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-left: 12.5%;
-  font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   background-color: #fffff8;
   color: #111;
   max-width: 1400px;
@@ -145,24 +121,6 @@ p {
   padding-right: 0;
   vertical-align: baseline; }
 
-/* Chapter Epigraphs */
-div.epigraph {
-  margin: 5em 0; }
-
-div.epigraph > blockquote {
-  margin-top: 3em;
-  margin-bottom: 3em; }
-
-div.epigraph > blockquote, div.epigraph > blockquote > p {
-  font-style: italic; }
-
-div.epigraph > blockquote > footer {
-  font-style: normal; }
-
-div.epigraph > blockquote > footer > cite {
-  font-style: italic; }
-
-/* end chapter epigraphs styles */
 blockquote {
   font-size: 1.4rem; }
 
@@ -174,6 +132,26 @@ blockquote .footer {
   font-size: 1.1rem;
   text-align: right; }
 
+/* Chapter Epigraphs */
+div.epigraph {
+  margin-bottom: 3em; }
+
+div.epigraph > blockquote {
+  margin: 1.5em 0; }
+
+div.epigraph > blockquote, div.epigraph > blockquote > p {
+  font-style: italic;
+  width: 85%; }
+
+div.epigraph > blockquote > footer {
+  font-style: normal; }
+
+div.epigraph > blockquote > footer > cite {
+  font-style: italic; }
+  div.epigraph > blockquote > footer > cite:before {
+    content: "—"; }
+
+/* end chapter epigraphs styles */
 ol, ul {
   width: 45%;
   -webkit-padding-start: 5%;
@@ -390,6 +368,136 @@ span.newthought {
 
   img {
     width: 100%; } }
+@media screen and (min-width: 32em) {
+  body > footer {
+    width: 100%;
+    margin: 3em 0;
+    padding: 0; }
+    body > footer #contact, body > footer #subscribe {
+      width: 50%; }
+    body > footer #contact {
+      float: left; }
+    body > footer #subscribe {
+      float: right; }
+    body > footer .copyright {
+      clear: both; } }
+/* MailChimp Form Embed Code - Slim - 12/15/2015 v10.7 */
+#mc_embed_signup form {
+  display: block;
+  position: relative;
+  text-align: left;
+  padding: 10px 0; }
+
+#mc_embed_signup h2 {
+  font-weight: bold;
+  padding: 0;
+  margin: 15px 0;
+  font-size: 1.4em; }
+
+#mc_embed_signup input {
+  border: 1px solid #999;
+  -webkit-appearance: none; }
+
+#mc_embed_signup input[type=checkbox] {
+  -webkit-appearance: checkbox; }
+
+#mc_embed_signup input[type=radio] {
+  -webkit-appearance: radio; }
+
+#mc_embed_signup input:focus {
+  border-color: #333; }
+
+#mc_embed_signup .button {
+  clear: both;
+  background-color: #aaa;
+  border: 0 none;
+  border-radius: 4px;
+  letter-spacing: .03em;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 5px 10px 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: auto;
+  transition: all 0.23s ease-in-out 0s; }
+
+#mc_embed_signup .button:hover {
+  background-color: #777; }
+
+#mc_embed_signup .small-meta {
+  font-size: 11px; }
+
+#mc_embed_signup .nowrap {
+  white-space: nowrap; }
+
+#mc_embed_signup .clear {
+  clear: none;
+  display: inline; }
+
+#mc_embed_signup label {
+  display: block;
+  font-size: 16px;
+  padding-bottom: 10px;
+  font-weight: bold; }
+
+#mc_embed_signup input.email {
+  font-size: 15px;
+  display: block;
+  padding: 0 0.4em;
+  margin: 0 4% 10px 0;
+  min-height: 32px;
+  width: 58%;
+  min-width: 130px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+#mc_embed_signup input.button {
+  display: block;
+  width: 35%;
+  margin: 0 0 10px 0;
+  min-width: 90px; }
+
+#mc_embed_signup div#mce-responses {
+  float: left;
+  top: -1.4em;
+  padding: 0em .5em 0em .5em;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 5%;
+  clear: both; }
+
+#mc_embed_signup div.response {
+  margin: 1em 0;
+  padding: 1em .5em .5em 0;
+  font-weight: bold;
+  float: left;
+  top: -1.5em;
+  z-index: 1;
+  width: 80%; }
+
+#mc_embed_signup #mce-error-response {
+  display: none; }
+
+#mc_embed_signup #mce-success-response {
+  color: #529214;
+  display: none; }
+
+#mc_embed_signup label.error {
+  display: block;
+  float: none;
+  width: auto;
+  margin-left: 1.05em;
+  text-align: left;
+  padding: .5em 0; }
+
 main {
   margin-top: 20px; }
 
@@ -425,6 +533,7 @@ code {
 
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
+<link rel="stylesheet" href="https://use.typekit.net/sqk1urr.css">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 
@@ -432,85 +541,87 @@ code {
     <header>
   <div class="page-links">
     <a class="page-link" href="/">Home</a>
+      • <a class="page-link" href="/#talk">You Only Code as Well as You Listen</a>
+      • <a class="page-link" href="/#decolonizecfa">The Workshop @ CfA Summit</a>
+
     
       
     
       
     
       
-    
-      
-      • <a class="page-link" href="/resources/">Resources</a>
+      • <a class="page-link" href="/resources/">Resources &amp Examples</a>
       
     
-      • <a cass="page-link" href="#community">Community</a>
+      • <a class="page-link" href="#community">Mailing list / Contact Us</a>
   </div>
+  <h1>Decolonizing Civic Tech</h1>
 </header>
 
 
     <article class="post">
 
-  <div class="post-meta">
-    <h1 class="post-title">Resources</h1>
-  </div>
-
   <section>
-    <h1 id="resources">Resources</h1>
+    <div class="epigraph">
+<blockquote>
+<p>[W]hen we see free software—and we have a very long free software culture/movement—we always think of freedom of assembly freedom of speech, instead of freedom of cost, because we know that freedom is never free of cost. Our parents’ generation, our grandparent’s generation, paid dearly for it and we need to use software freedoms to keep it free.</p>
+<footer>
+<cite>Audrey Tang—Taiwan’s Digital Minister, <a href="https://youtu.be/5DkhUO7LiGs?t=5m56s">Stories from the Future of Democracy.</a></cite>
+  </footer>
+</blockquote>
+
+</div>
+
+<div class="post-meta">
+  <h1 class="post-title">Resources &amp Examples</h1>
+</div>
 
 <p>Know of a group or resource that belongs on this list? <a href="https://github.com/thebestsophist/decolonizing-civic-tech">Make a pull request</a>.</p>
 
-<h2 id="innovation-agencies">Innovation Agencies</h2>
-
 <ul>
-  <li><a href="https://pdis.nat.gov.tw/en/">PDiS (Taiwan)</a></li>
+<li><a href="https://civica.digital/servicios/">CIVICA DIGITAL</a> — Cívica Digital is a team specialized in civic technology based in Monterrey, Mexico. They are a diverse group of people, with an exclusive focus on designing and developing digital products with technical quality and a great user experience. They’ve built software that is based on the mexican law infrastructure, instead of importing services from other places in the world.</li>
+<li><a href="http://consulproject.org/en/">CONSUL</a> — Free software for citizen participation in policy making and writing laws, by the city of Madrid, Spain.</li>
+<li><a href="https://decidim.org">Decidim</a> — Free open-source participatory democracy for cities and organizations, created by the City of Barcelona.</li>
+<li><a href="https://exploralat.am/en">EXPLORA LATAM</a> — Map showing the diversity of civic tech “south of the border”. Great example of how civic tech sprouts from the contextual gaps in national governments.</li>
+<li><a href="https://g0v.tw/en-US/">g0v.tw 後勤中心</a> — a decentralized civic tech community in Taiwan, which works on civic and community projects that range from building dictionaries of indigenous languages to open source hardware and servers that track air particulate and pollution, to open government data to collaboration with the government to build tools for public input for public policy problems.</li>
+<li><a href="https://pdis.nat.gov.tw/en/">Public Digital Innovation Space</a> — PDIS is a ministry-level office in the Taiwanese government that incubates and facilitates public digital innovation and service.</li>
+<li><a href="http://softwarepublicoregionalbeta.net/">REGIONAL PUBLIC SOFTWARE</a> — Latin-american project to build public software to be co-created between national governments taking an open-end approach.</li>
+<li><a href="http://softwarepublicoregionalbeta.net/catalog/projects/SINMA-LAT">SINMA-LAT</a> — Adaptation project based on a specific national government’s need to disaster relief using open-source and NGO’s data. (Also worth mentioning Veriicado 19s platform for GIS open collaboration following the September 2017 earthquake).</li>
+<li><a href="http://vtaiwan.tw">vTaiwan</a> — vTaiwan is an online-offline consultation process which brings together government ministries, elected representatives, scholars, experts, business leaders, civil society organizations and citizens. The process helps lawmakers implement decisions with a greater degree of legitimacy.</li>
+<li><a href="http://www2.redgealc.org/site/assets/files/6818/tenoli-bs.pdf">X-LAT</a> — International cooperation of public software application between governments. El Salvador adapted the X-road Architecture to a Latin-American context.</li>
 </ul>
-
-<h2 id="civic-tech-communities">Civic tech communities</h2>
-
-<ul>
-  <li></li>
-</ul>
-
   </section>
 
 </article>
 
-<footer class="site-footer">
-	<section id="community">
-   		<h2>Stay up to date</h2>
-   		<p>Things</p>
+    <footer class="site-footer" id="#community">
+	<section id="contact">
+		<h2>Talk to us</h2>
+		<p>There is much to do and we’re just starting to suss out what we want to do, email us at <a href="mailto:decolonizingcivictech@gmail.com">decolonizingcivictech@gmail.com</a> and let us know what you want from this.</p>
 	</section>
-	<section id="about">
-		<h2>About us</h2>
-			<ul>
-				<li>Abbey Kos</li>
-				<li>Cordelia Yu</li>
-				<li>Sydette Harry</li>
-				<li>Alberto Rodriguez Alvarez</li>
-			</ul>
-		<p>Things</p>
-	</section>
-	<section class="copyright">This website was designed and developed on Aboriginal land. 2019 Decolonizing Civic Tech.</section>
-</footer>
+	<section id="subscribe">
+   		<h2>Join our mailing list</h2>
+   		<p>Sign up for periodic emails to keep up with what’s next.</p>
+   		
+<!-- Begin Mailchimp Signup Form -->
 
+<div id="mc_embed_signup">
+<form action="https://gmail.us20.list-manage.com/subscribe/post?u=4f1850256fa2d9f0817ea1601&amp;id=a6ba107b75" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4f1850256fa2d9f0817ea1601_a6ba107b75" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
 
+<!--End mc_embed_signup-->
 
-    <footer class="site-footer">
-	<section id="community">
-   		<h2>Stay up to date</h2>
-   		<p>Things</p>
 	</section>
-	<section id="about">
-		<h2>About us</h2>
-			<ul>
-				<li>Abbey Kos</li>
-				<li>Cordelia Yu</li>
-				<li>Sydette Harry</li>
-				<li>Alberto Rodriguez Alvarez</li>
-			</ul>
-		<p>Things</p>
-	</section>
-	<section class="copyright">This website was designed and developed on Aboriginal land. 2019 Decolonizing Civic Tech.</section>
+	<section class="copyright"><p>This website was designed and developed on Aboriginal land. 2019 Decolonizing Civic Tech.</p>
+		</section>
 </footer>
 
   </body>
